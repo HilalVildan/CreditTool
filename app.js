@@ -6,7 +6,7 @@
 const hesaplaButon = document.querySelector(".btn");
 const vade = document.querySelector("#vade")
 const tutar = document.querySelector("#tutar")
-let oran;
+let oran = 0;
 let taksit;
 
 
@@ -18,15 +18,15 @@ hesaplaButon.addEventListener("click", (e) => {
 
   if (document.querySelector(".form-select").value === "Konut Kredisi") {
     oran = 1.29;
+   
   } else if (document.querySelector(".form-select").value === "Ihtiyac Kredisi") {
     oran = 1.99;
-  } else if(document.querySelector(".form-select").value === "Arac Kredisi"); {
+    
+  } else if(document.querySelector(".form-select").value === "Arac Kredisi") {
       oran = 1.79;
 }
 
-if (!select.value || !vade.value || !tutar.value) {
-    alert('Lutfen Kredi turu, Vade ve tutari giriniz');
-  }
+
 
 const faiz = oran /100;
 

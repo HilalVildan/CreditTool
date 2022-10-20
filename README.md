@@ -4,7 +4,7 @@ https://credit-calculator-tool.netlify.app/
 
 ## Description
 ​
-Created a credit calculator using HTML and JS
+Using Javascript, a credit calculator was created that calculates the total repayment of different credit types with their determined interest rates and the desired maturity.
 ​
 ## Project GIF
 ​

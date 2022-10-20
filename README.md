@@ -8,7 +8,7 @@ Created a credit calculator using HTML and JS
 ​
 ## Project GIF
 ​
-![proje image](/MTVideo.gif)
+![proje image](/MTVideo-2.gif)
 
 ## Technologies used
 

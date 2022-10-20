@@ -16,15 +16,15 @@ hesaplaButon.addEventListener("click", (e) => {
 
   e.preventDefault();
 
-  if (document.querySelector(".form-select").value === "Konut Kredisi") {
+  if (document.querySelector(".form-select").value === "Housing loan") {
     oran = 1.29;
-   
-  } else if (document.querySelector(".form-select").value === "Ihtiyac Kredisi") {
+  } else if (
+    document.querySelector(".form-select").value === "Personal finance credit"
+  ) {
     oran = 1.99;
-    
-  } else if(document.querySelector(".form-select").value === "Arac Kredisi") {
-      oran = 1.79;
-}
+  } else if (document.querySelector(".form-select").value === "Auto loan") {
+    oran = 1.79;
+  }
 
 
 
@@ -49,25 +49,25 @@ const sonuclariGöster = () => {
     const sonuclar = document.querySelector(".sonuclar");
 
     sonuclar.innerHTML = 
-    ` <h2 class="mt-3 text-warning">Kredi Bilgileri</h2>
+    ` <h2 class="mt-3 text-warning">Credit information</h2>
   <table class="table table-bordered border-warning  mt-4">
    <tbody>
     <tr>
-      <th>Kredi Miktari</th>
+      <th>Credit amount</th>
       <td>${tutar.value} ₺</td>
-      <th>Kredi Tipi</th>
+      <th>Credit Type</th>
       <td>${select.value}</td>
     </tr>
     <tr>
-      <th>Vade</th>
+      <th>Maturity</th>
       <td>${vade.value}</td>
-      <th>Faiz Orani</th>
+      <th>Interest rate</th>
       <td>${oran}</td>
     </tr>
     <tr>
-      <th>Toplam Tutar</th>
+      <th>Total amount</th>
       <td>${(taksit * vade.value).toFixed(2)} ₺</td>
-      <th>Taksit Tutari</th>
+      <th>Installment amount</th>
       <td>${taksit.toFixed(2)} ₺</td>
     </tr>
   </tbody>
